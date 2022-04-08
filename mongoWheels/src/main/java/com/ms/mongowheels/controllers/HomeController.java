@@ -11,4 +11,19 @@ public class HomeController {
 	public String home() {
 		return "home.html";
 	}
+	
+	@GetMapping("/explore")
+	public String explore() {
+		return "explore.html";
+	}
+	
+	@GetMapping("/favorites")
+	public String favorites() {
+		return "favorites.html";
+	}
+	
+	@GetMapping("/search")
+	public String search() {
+		return "search.html";
+	}
 }
