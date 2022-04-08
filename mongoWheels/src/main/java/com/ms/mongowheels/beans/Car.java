@@ -19,6 +19,7 @@ public class Car {
 	@Id
 	private String id;
 
+
 	@NonNull
 	private Dimensions dimensions;
 
