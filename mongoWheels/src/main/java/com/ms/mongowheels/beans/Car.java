@@ -18,9 +18,22 @@ public class Car {
 	
 	@Id
 	private String id;
+
 	@NonNull
-	private String name;
+	private Dimensions dimensions;
+
+	// this instance includes engine stats object as a field
 	@NonNull
-	private String description;
+	private Engine engine;
+
+
+	@NonNull
+	private FuelInfo fuelInfo;
+
+	@NonNull
+	private Identification identification;
+
+
+
 
 }
