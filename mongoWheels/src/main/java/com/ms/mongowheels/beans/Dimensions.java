@@ -1,5 +1,8 @@
 package com.ms.mongowheels.beans;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class Dimensions
 {
     private int Height;
