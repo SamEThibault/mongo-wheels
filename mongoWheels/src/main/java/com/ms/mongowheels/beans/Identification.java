@@ -18,6 +18,16 @@ public class Identification
         year = 0;
     }
 
+    public Identification(String classificationIn, String IDIn, String makeIn, String modelYearIn,
+                          int yearIn)
+    {
+        classification = classificationIn;
+        ID = IDIn;
+        make = makeIn;
+        modelYear = modelYearIn;
+        year = yearIn;
+    }
+
     public String getClassification()
     {
         return classification;

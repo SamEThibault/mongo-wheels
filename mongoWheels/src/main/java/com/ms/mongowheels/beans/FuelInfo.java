@@ -13,6 +13,13 @@ public class FuelInfo
         highwayMpg = 0;
     }
 
+    public FuelInfo(int cityMpgIn, String fuelTypeIn, int highwayMpgIn)
+    {
+        cityMpg = cityMpgIn;
+        fuelType = fuelTypeIn;
+        highwayMpg = highwayMpgIn;
+    }
+
     public int getCityMpg()
     {
         return cityMpg;

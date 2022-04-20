@@ -16,6 +16,13 @@ public class Dimensions
         length = 0;
         width = 0;
     }
+
+    public Dimensions(int heightIn, int lengthIn, int widthIn)
+    {
+        height = heightIn;
+        length = lengthIn;
+        width = widthIn;
+    }
     // ----------------- getter and setters ------------------
     public int getHeight()
     {

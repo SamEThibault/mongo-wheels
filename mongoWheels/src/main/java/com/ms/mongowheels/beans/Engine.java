@@ -20,6 +20,18 @@ public class Engine
         engineStats = new EngineStats();
     }
 
+    public Engine(String driveLineIn, String engineTypeIn, boolean hybridIn, int numGearsIn,
+                  String transmissionIn, EngineStats engineStatsIn)
+    {
+        driveline = driveLineIn;
+        engineType = engineTypeIn;
+        hybrid = hybridIn;
+        numGears = numGearsIn;
+        transmission = transmissionIn;
+        engineStats = engineStatsIn;
+    }
+
+
     public String getDriveline()
     {
         return driveline;

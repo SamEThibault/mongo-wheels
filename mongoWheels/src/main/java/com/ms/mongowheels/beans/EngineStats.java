@@ -11,6 +11,12 @@ public class EngineStats
         torque = 0;
     }
 
+    public EngineStats(int horsepowerIn, int torqueIn)
+    {
+        horsepower = horsepowerIn;
+        torque = torqueIn;
+    }
+
     public int getHorsepower()
     {
         return horsepower;
