@@ -2,21 +2,32 @@ package com.ms.mongowheels.beans;
 
 public class Engine
 {
-    private String Driveline;
+    private String driveline;
     private String engineType;
-    private boolean Hybrid;
+    private boolean hybrid;
     private int numGears;
-    private String Transmission;
+    private String transmission;
     private EngineStats engineStats;
+
+    // no argument constructor
+    public Engine()
+    {
+        driveline = "default";
+        engineType = "default";
+        hybrid = false;
+        numGears = 0;
+        transmission = "default";
+        engineStats = new EngineStats();
+    }
 
     public String getDriveline()
     {
-        return Driveline;
+        return driveline;
     }
 
     public void setDriveline(String driveline)
     {
-        Driveline = driveline;
+        this.driveline = driveline;
     }
 
     public String getEngineType()
@@ -31,12 +42,12 @@ public class Engine
 
     public boolean isHybrid()
     {
-        return Hybrid;
+        return hybrid;
     }
 
     public void setHybrid(boolean hybrid)
     {
-        Hybrid = hybrid;
+        this.hybrid = hybrid;
     }
 
     public int getNumGears()
@@ -51,11 +62,11 @@ public class Engine
 
     public String getTransmission()
     {
-        return Transmission;
+        return transmission;
     }
 
     public void setTransmission(String transmission)
     {
-        Transmission = transmission;
+        this.transmission = transmission;
     }
 }

@@ -5,39 +5,46 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document
 public class Dimensions
 {
-    private int Height;
-    private int Length;
-    private int Width;
+    private int height;
+    private int length;
+    private int width;
 
+    // no argument constructor
+    public Dimensions()
+    {
+        height = 0;
+        length = 0;
+        width = 0;
+    }
     // ----------------- getter and setters ------------------
     public int getHeight()
     {
-        return this.Height;
+        return this.height;
     }
 
     public int getLength()
     {
-        return this.Length;
+        return this.length;
     }
 
     public int getWidth()
     {
-        return this.Width;
+        return this.width;
     }
 
     public void setHeight(int height)
     {
-        this.Height = height;
+        this.height = height;
     }
 
     public void setLength(int length)
     {
-        this.Length = length;
+        this.length = length;
     }
 
     public void setWidth(int width)
     {
-        this.Width = width;
+        this.width = width;
     }
 
     // -------------------------------------------------------

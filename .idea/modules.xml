@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mongo-wheels.iml" filepath="$PROJECT_DIR$/.idea/mongo-wheels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongoWheels/mongoWheels.iml" filepath="$PROJECT_DIR$/mongoWheels/mongoWheels.iml" />
     </modules>
   </component>
 </project>

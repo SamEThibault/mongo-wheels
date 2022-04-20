@@ -6,6 +6,12 @@ public class FuelInfo
     private String fuelType;
     private int highwayMpg;
 
+    public FuelInfo()
+    {
+        cityMpg = 0;
+        fuelType = "default";
+        highwayMpg = 0;
+    }
 
     public int getCityMpg()
     {

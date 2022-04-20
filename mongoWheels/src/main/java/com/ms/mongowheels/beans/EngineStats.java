@@ -2,27 +2,33 @@ package com.ms.mongowheels.beans;
 
 public class EngineStats
 {
-    private int Horsepower;
-    private int Torque;
+    private int horsepower;
+    private int torque;
+
+    public EngineStats()
+    {
+        horsepower = 0;
+        torque = 0;
+    }
 
     public int getHorsepower()
     {
-        return Horsepower;
+        return horsepower;
     }
 
     public void setHorsepower(int horsepower)
     {
-        Horsepower = horsepower;
+        this.horsepower = horsepower;
     }
 
     public int getTorque()
     {
-        return Torque;
+        return torque;
     }
 
     public void setTorque(int torque)
     {
-        Torque = torque;
+        this.torque = torque;
     }
 
 

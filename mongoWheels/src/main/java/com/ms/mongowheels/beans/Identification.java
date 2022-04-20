@@ -3,20 +3,29 @@ package com.ms.mongowheels.beans;
 public class Identification
 {
 
-    private String Classification;
+    private String classification;
     private String ID;
-    private String Make;
+    private String make;
     private String modelYear;
-    private int Year;
+    private int year;
+
+    public Identification()
+    {
+        classification = "default";
+        ID = "default";
+        make = "default";
+        modelYear = "default";
+        year = 0;
+    }
 
     public String getClassification()
     {
-        return Classification;
+        return classification;
     }
 
     public void setClassification(String classification)
     {
-        Classification = classification;
+        this.classification = classification;
     }
 
     public String getID()
@@ -31,12 +40,12 @@ public class Identification
 
     public String getMake()
     {
-        return Make;
+        return make;
     }
 
     public void setMake(String make)
     {
-        Make = make;
+        this.make = make;
     }
 
     public String getModelYear()
@@ -51,12 +60,12 @@ public class Identification
 
     public int getYear()
     {
-        return Year;
+        return year;
     }
 
     public void setYear(int year)
     {
-        Year = year;
+        this.year = year;
     }
 
 }

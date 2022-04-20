@@ -34,6 +34,16 @@ public class Car {
 	@NonNull
 	private Identification identification;
 
+	// no argument constructor initializing fields to default values
+	public Car()
+	{
+		id = "not found";
+		dimensions = new Dimensions();
+		engine = new Engine();
+		fuelInfo = new FuelInfo();
+		identification = new Identification();
+	}
+
 
 
 
