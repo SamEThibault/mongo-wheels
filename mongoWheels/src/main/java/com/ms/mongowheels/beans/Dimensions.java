@@ -1,10 +1,19 @@
 package com.ms.mongowheels.beans;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.Data;
+
+
+
+@Data
 @Document
 public class Dimensions
 {
+	
+	@Id
+	private String id;
     private int height;
     private int length;
     private int width;
