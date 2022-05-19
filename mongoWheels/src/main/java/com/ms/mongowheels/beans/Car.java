@@ -10,10 +10,10 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 @Data
-@Document
 @AllArgsConstructor
 @NoArgsConstructor
 @RequiredArgsConstructor
+@Document(collection="carsv3")
 public class Car {
 	
 	@Id

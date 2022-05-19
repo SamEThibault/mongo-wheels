@@ -62,22 +62,34 @@ padding: 20px;
 				<th>Height</th>
 				<th>Length</th>
 				<th>Width</th>
+				<th>DriveLine</th>
 
 
 			</tr>
 		</thead>
 		<tbody>
-			<tr th:each="dimensions:${dimensionsList}">
+			<tr th:each="car:${carList}">
 
-				<td th:text="${dimensions.height}">Height</td>
-				<td th:text="${dimensions.length}">Length</td>
-				<td th:text="${diemensions.width}">Width</td>
-
+				<td th:text="${car.height}">Height</td>
+				<td th:text="${car.length}">Length</td>
+				<td th:text="${car.width}">Width</td>
+				<td th:text="${car.driveLine}">DriveLine</td>
 			</tr>
 		</tbody>
 
 
 	</table>
+	
+	<form method="post" action="/addCar" th:object="${car}">
+	
+		<input type="hidden" th:field="*{id}"> 
+		<input type="text" th:field="*{Height}"> 
+		<input type="text" th:field="*{Length}">
+		<input type="text" th:field="*{Width}">
+		<input type="text" th:field="*{driveLine}">
+		<button type="submit">Submit</button>
+		
+	</form>
 
 </body>
 </html>
