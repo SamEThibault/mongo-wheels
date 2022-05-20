@@ -1,17 +1,16 @@
 package com.ms.mongowheels.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 
 import com.ms.mongowheels.beans.Car;
 import com.ms.mongowheels.repositories.CarRepository;
 
-
-
+import java.util.List;
 
 
 @Controller
@@ -41,6 +40,7 @@ public class HomeController {
 	public String search() {
 		return "search";
 	}
+
 	@PostMapping("/addCar")
 	public String addCar(Model model, @ModelAttribute Car car) {
 		car.setId(null);
@@ -49,4 +49,16 @@ public class HomeController {
 		model.addAttribute("carList", carRepo.findAll());
 		return "home";
 	}
+
+	// in progress, not working
+	@RequestMapping("/getCar")
+	public List<Car> getCar(Model model, @RequestParam String query)
+	{
+		Car car = new Car();
+		car.setMake(query);
+		Example<Car> example = Example.of(car);
+		return carRepo.findAll(example);
+	}
+
+
 }
