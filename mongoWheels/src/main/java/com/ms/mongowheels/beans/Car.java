@@ -12,8 +12,8 @@ import lombok.RequiredArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@RequiredArgsConstructor
-@Document(collection="carsv3")
+//@RequiredArgsConstructor
+@Document(collection="carsv5")
 public class Car {
 	
 	@Id
@@ -22,34 +22,18 @@ public class Car {
 	private int height;
 	private int length;
 	private int width;
+	private String driveLine;
+	private String engineType;
+	private boolean hybrid;
+	private int numGears;
+	private String transmission;
 	private int cityMpg;
+	private String fuelType;
 	private int highwayMpg;
+	private String make;
 	private int year;
 	private int hp;
 	private int torque;
-	private int numGears;
-	private boolean hybrid;
-
-	@NonNull
-	private String driveLine;
-
-	@NonNull
-	private String engineType;
-
-	@NonNull
-	private String transmission;
-
-	@NonNull
-	private String fuelType;
-
-	@NonNull
-	private String classification;
-
-	@NonNull
-	private String info;
-
-	@NonNull
-	private String make;
 }
 
 
