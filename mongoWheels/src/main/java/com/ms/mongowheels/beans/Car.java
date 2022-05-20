@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-//@RequiredArgsConstructor
 @Document(collection="carsv5")
 public class Car {
 	

@@ -7,6 +7,7 @@
     <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/beans/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/beans/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <workItem from="1650507119074" duration="35000" />
       <workItem from="1652931771083" duration="825000" />
       <workItem from="1652935413741" duration="3690000" />
-      <workItem from="1653014715019" duration="1342000" />
+      <workItem from="1653014715019" duration="2819000" />
     </task>
     <servers />
   </component>

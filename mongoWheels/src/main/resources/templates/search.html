@@ -11,7 +11,16 @@
     body {
     background-color: #15121E;
     }
-    
+
+    .logo {
+        margin-right: 20px;
+    }
+
+    .form-inline {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
     #title {
     color: #FF276F;
     }
@@ -23,14 +32,30 @@
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
+
     <div class="navbar-header">
-      <a class="navbar-brand" id="title" href="/">Mongo Cars</a>
+<!--      <a class="navbar-brand" id="title" href="/">Mongo Cars</a>-->
     </div>
     <ul class="nav navbar-nav">
+
+        <li><img src="logo.png" height="50px" width="50px" alt="logo"
+                 class="logo"></li>
+        <li>
+            <div class="navbar-header">
+                <a class="navbar-brand" id="title" href="/"> Mongo Cars</a>
+            </div>
+        </li>
       <li><a href="/">Home</a></li>
       <li class="active"><a href="/search">Search</a></li>
       <li><a href="/favorites">Favorites</a></li>
       <li><a href="/explore">Explore</a></li>
+
+        <li><form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for a car" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </li>
+
     </ul>
   </div>
 </nav>
