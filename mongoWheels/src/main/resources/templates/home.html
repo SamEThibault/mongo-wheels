@@ -28,6 +28,10 @@ tr {
 th {
 padding: 20px;
 }
+img { 
+height: 60%;
+width: 60%;
+}
 
 
 
@@ -80,43 +84,17 @@ padding: 20px;
   </div>
 </nav>
 
+<button onclick="document.getElementById('myImage').src='car1.jpg'">previous</button>
+
+<img src="car1.jpg" class="rounded mx-auto d-block" alt="..." id="myImage">	
+
+<button onclick="document.getElementById('myImage').src='car2.jpg'">Next</button>
+
+	
 	
 
-	<table>
-		<thead>
-			<tr>
-
-				<th>Height</th>
-				<th>Length</th>
-				<th>Width</th>
-				<th>DriveLine</th>
-
-
-			</tr>
-		</thead>
-		<tbody>
-			<tr th:each="car:${carList}">
-
-				<td th:text="${car.height}">Height</td>
-				<td th:text="${car.length}">Length</td>
-				<td th:text="${car.width}">Width</td>
-				<td th:text="${car.driveLine}">DriveLine</td>
-			</tr>
-		</tbody>
-
-
-	</table>
 	
-	<form method="post" action="/addCar" th:object="${car}">
-	
-		<input type="hidden" th:field="*{id}"> 
-		<input type="text" th:field="*{Height}"> 
-		<input type="text" th:field="*{Length}">
-		<input type="text" th:field="*{Width}">
-		<input type="text" th:field="*{driveLine}">
-		<button type="submit">Submit</button>
-		
-	</form>
+
 
 </body>
 </html>
