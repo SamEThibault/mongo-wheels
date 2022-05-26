@@ -14,12 +14,12 @@ body {
 	background-color: #15121E;
 }
 
-#title {
+a {
 	color: #FF276F;
 }
 
-.logo {
-	margin-right: 20px;
+.nav-link {
+		color: #FF276F;
 }
 
 tr {
@@ -29,13 +29,15 @@ th {
 padding: 20px;
 }
 
+
+
 </style>
 
 </head>
 <body>
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-danger bg-dark">
 
   <a class="navbar-brand" href="/">Mongo Wheels</a>
 
@@ -48,7 +50,7 @@ padding: 20px;
       <li class="nav-item active">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
+      <li id="item" class="nav-item">
         <a class="nav-link" href="/explore">Explore</a>
       </li>
         <li class="nav-item">
@@ -59,22 +61,25 @@ padding: 20px;
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Car Specifications
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+          <a class="dropdown-item" href="/engine">Engine</a>
+          <a class="dropdown-item" href="/body">Body</a>
+           <a class="dropdown-item" href="/fuel">Fuel</a>
+           </div>
+         
       </li>
+      
+   
     </ul>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="form-inline my-2 my-lg-0 ">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>
 </nav>
+
 	
 
 	<table>

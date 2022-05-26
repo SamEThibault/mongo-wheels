@@ -40,6 +40,23 @@ public class HomeController {
 	public String search() {
 		return "search";
 	}
+	
+	@GetMapping("/fuel")
+	public String fuel() {
+		return "fuel";
+	}
+	
+	@GetMapping("/engine")
+	public String engine(Model model) {
+		model.addAttribute("car", new Car());
+		model.addAttribute("carList", carRepo.findAll());
+		return "engine";
+	}
+	
+	@GetMapping("/body")
+	public String body() {
+		return "body";
+	}
 
 	@PostMapping("/addCar")
 	public String addCar(Model model, @ModelAttribute Car car) {
