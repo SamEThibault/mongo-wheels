@@ -85,8 +85,40 @@ padding: 20px;
     </form>
   </div>
 </nav>
-	
 
+<table>
+  <thead>
+  <tr>
+
+    <th>Vehicle</th>
+    <th>Engine</th>
+    <th>Hybrid</th>
+    <th>DriveLine</th>
+    <th>Torque</th>
+    <th>Horsepower</th>
+    <th>Transmission</th>
+    <th>Gears</th>
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="car:${carList}">
+
+    <td th:text="${car.make}">make</td>
+    <td th:text="${car.engineType}">engineType</td>
+    <td th:text="${car.hybrid}">hybrid</td>
+    <td th:text="${car.driveLine}">DriveLine</td>
+    <td th:text="${car.torque}">tq</td>
+    <td th:text="${car.hp}">hp</td>
+    <td th:text="${car.transmission}">tranny</td>
+    <td th:text="${car.numGears}">num</td>
+
+  </tr>
+  </tbody>
+
+
+</table>
 
 </body>
 </html>

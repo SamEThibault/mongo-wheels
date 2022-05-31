@@ -7,6 +7,8 @@
     <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/repositories/CarRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/repositories/CarRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Code/JAVA/personal/Mongo-example-matt/MongoDB/pom.xml" />
@@ -84,7 +87,8 @@
       <workItem from="1652931771083" duration="825000" />
       <workItem from="1652935413741" duration="3690000" />
       <workItem from="1653014715019" duration="3854000" />
-      <workItem from="1653019045139" duration="735000" />
+      <workItem from="1653019045139" duration="1280000" />
+      <workItem from="1653954760892" duration="6195000" />
     </task>
     <servers />
   </component>

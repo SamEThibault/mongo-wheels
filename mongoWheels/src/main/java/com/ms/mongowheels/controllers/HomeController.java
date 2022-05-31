@@ -2,13 +2,13 @@ package com.ms.mongowheels.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import com.ms.mongowheels.beans.Car;
 import com.ms.mongowheels.repositories.CarRepository;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
@@ -67,14 +67,18 @@ public class HomeController {
 		return "home";
 	}
 
-	// in progress, not working
-	@RequestMapping("/getCar")
-	public List<Car> getCar(Model model, @RequestParam String query)
+	// in progress, not fully functional
+	@RequestMapping("/getCars")
+	public String getCars(Model model, @RequestParam("make") String make)
 	{
-		Car car = new Car();
-		car.setMake(query);
-		Example<Car> example = Example.of(car);
-		return carRepo.findAll(example);
+//		ModelAndView mv = new ModelAndView();
+		// for each car returned from the get request, add to modelView object as "car" attribute
+//		carRepo.findCarsByMake(make).forEach(car -> {
+//			mv.addObject("car", car);
+//		});
+
+		model.addAttribute("carList", carRepo.findCarsByMake(make));
+		return "search";
 	}
 
 
