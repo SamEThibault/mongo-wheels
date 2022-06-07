@@ -4,7 +4,6 @@ This project stems from a love of cars paired with an obsession for performance 
 
 ### TODO
 - Refine frontend
-- Reform database for specific individual fields to override current engine field
 - Implement favourites functionality
 - Implement login system
 - Add filter search function

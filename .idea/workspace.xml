@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/beans/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/beans/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/engine.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/engine.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/explore.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/explore.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/favorites.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/fuel.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/fuel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/search.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +89,9 @@
       <workItem from="1653014715019" duration="3854000" />
       <workItem from="1653019045139" duration="1280000" />
       <workItem from="1653954760892" duration="7173000" />
-      <workItem from="1653968217254" duration="443000" />
+      <workItem from="1653968217254" duration="496000" />
+      <workItem from="1654457542140" duration="132000" />
+      <workItem from="1654633088002" duration="1222000" />
     </task>
     <servers />
   </component>

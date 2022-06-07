@@ -91,7 +91,7 @@ padding: 20px;
   <tr>
 
     <th>Vehicle</th>
-    <th>Engine</th>
+    <th>Model Year</th>
     <th>Hybrid</th>
     <th>DriveLine</th>
     <th>Torque</th>
@@ -106,7 +106,7 @@ padding: 20px;
   <tr th:each="car:${carList}">
 
     <td th:text="${car.make}">make</td>
-    <td th:text="${car.engineType}">engineType</td>
+    <td th:text="${car.modelYear}">engineType</td>
     <td th:text="${car.hybrid}">hybrid</td>
     <td th:text="${car.driveLine}">DriveLine</td>
     <td th:text="${car.torque}">tq</td>
