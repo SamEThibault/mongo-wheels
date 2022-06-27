@@ -8,6 +8,7 @@
 <meta charset="UTF-8">
 <title>Dashboard</title>
 
+<script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 
 <style>
 body {
@@ -51,9 +52,7 @@ width: 60%;
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-      </li>
+    
       <li id="item" class="nav-item">
         <a class="nav-link" href="/explore">Explore</a>
       </li>
@@ -77,18 +76,11 @@ width: 60%;
       
    
     </ul>
-    <form class="form-inline my-2 my-lg-0 " action="http://localhost:8080/getCars" method="GET">
-      <input class="form-control mr-sm-2" name="make" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-    </form>
+  
   </div>
 </nav>
 
-<button onclick="document.getElementById('myImage').src='car1.jpg'">previous</button>
 
-<img src="car1.jpg" class="rounded mx-auto d-block" alt="..." id="myImage">	
-
-<button onclick="document.getElementById('myImage').src='car2.jpg'">Next</button>
 
 	
 	

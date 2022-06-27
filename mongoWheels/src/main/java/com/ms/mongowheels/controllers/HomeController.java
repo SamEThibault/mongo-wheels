@@ -1,16 +1,12 @@
 package com.ms.mongowheels.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Example;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import com.ms.mongowheels.beans.Car;
 import com.ms.mongowheels.repositories.CarRepository;
-import org.springframework.web.servlet.ModelAndView;
-
-import java.util.List;
 
 
 @Controller
@@ -23,7 +19,7 @@ public class HomeController {
 	public String home(Model model) {
 		model.addAttribute("car", new Car());
 		model.addAttribute("carList", carRepo.findAll());
-		return "home";
+		return "home"; 
 	}
 	
 	@GetMapping("/explore")
@@ -42,7 +38,9 @@ public class HomeController {
 	}
 	
 	@GetMapping("/fuel")
-	public String fuel() {
+	public String fuel(Model model) {
+		model.addAttribute("car", new Car());
+		model.addAttribute("carList", carRepo.findAll());
 		return "fuel";
 	}
 	
@@ -53,8 +51,19 @@ public class HomeController {
 		return "engine";
 	}
 	
+	@GetMapping("/test")
+	public String test(Model model) {
+		model.addAttribute("car", new Car());
+		model.addAttribute("carList", carRepo.findAll());
+		return "text";
+	}
+	
+	
+	
 	@GetMapping("/body")
-	public String body() {
+	public String body(Model model) {
+		model.addAttribute("car", new Car());
+		model.addAttribute("carList", carRepo.findAll());
 		return "body";
 	}
 
@@ -66,6 +75,16 @@ public class HomeController {
 		model.addAttribute("carList", carRepo.findAll());
 		return "home";
 	}
+	
+	
+	//--------------------------------Matt's testing zone----------------------
+
+	    
+	
+	//--------------------------------------------------------------------------
+	
+	
+	
 
 	// in progress, not fully functional
 	@RequestMapping("/getCars")
