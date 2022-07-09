@@ -1,5 +1,7 @@
 package com.ms.mongowheels.controllers;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,11 +18,24 @@ public class HomeController {
 	private CarRepository carRepo;
 	
 	@GetMapping("/")
-	public String home(Model model) {
+	public String home(HttpSession session, Model model) {
+		String message;
+	if (session.isNew()) {
+		message = "Welcome!";
+	}
+	else {
+		message = "Welcome back!";
+		
+	}
+		model.addAttribute("mymessage", message);
 		model.addAttribute("car", new Car());
 		model.addAttribute("carList", carRepo.findAll());
+		
+		
 		return "home"; 
 	}
+	
+	
 	
 	@GetMapping("/explore")
 	public String explore() {
