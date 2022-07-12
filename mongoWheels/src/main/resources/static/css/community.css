@@ -1,0 +1,56 @@
+.body {
+    background-color: #15121E;
+}
+
+.a {
+    color: #FF276F;
+}
+
+.nav-link {
+    color: #FF276F;
+}
+
+.tr {
+    color: white;
+}
+
+.th {
+    padding: 20px;
+}
+
+.img {
+    height: 60%;
+    width: 60%;
+}
+
+.welcome {
+    position: absolute;
+    color:white;
+    left: 40%;
+    font-size: 50px;
+}
+
+.li {
+    padding-left: 10px;
+}
+
+.input {
+    background-color:#343c44;
+    border: 0px;
+    font-size: 20px;
+    color: #dd2b5d;
+}
+
+.table {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 40%;
+}
+
+.input {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: 700px;
+}
