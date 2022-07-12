@@ -54,7 +54,9 @@ public class HomeController {
 	
 	
 	@GetMapping("/explore")
-	public String explore() {
+	public String getCarsByHp(Model model)
+	{
+		model.addAttribute("carList", carRepo.findAllByHpEquals(500));
 		return "explore";
 	}
 	
@@ -159,22 +161,11 @@ public class HomeController {
 	
 	//--------------------------------------------------------------------------
 	
-	
-	
 
-	// in progress, not fully functional
 	@RequestMapping("/getCars")
 	public String getCars(Model model, @RequestParam("make") String make)
 	{
-//		ModelAndView mv = new ModelAndView();
-		// for each car returned from the get request, add to modelView object as "car" attribute
-//		carRepo.findCarsByMake(make).forEach(car -> {
-//			mv.addObject("car", car);
-//		});
-
 		model.addAttribute("carList", carRepo.findCarsByMake(make));
 		return "search";
 	}
-
-
 }

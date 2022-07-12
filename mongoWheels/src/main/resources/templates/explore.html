@@ -14,6 +14,74 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
   <div id="nav-placeholder"></div>
 
+          <div id="carouselExampleIndicators" class="carousel slide m-5" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner mx-auto w-50 text-center">
+                  <div class="carousel-item active">
+                      <div class="card text-white bg-dark mb-3">
+                          <h3 class="card-header" th:text="${carList[0].modelYear}"></h3>
+                          <div class="card-body">
+                              <h4 class="card-title">Driveline: </h4>
+                              <h5 class="card-text" th:text="${carList[0].driveLine}"></h5>
+                              <h4 class="card-title">Horsepower: </h4>
+                              <h5 class="card-text" th:text="${carList[0].hp}"></h5>
+                              <h4 class="card-title">Torque: </h4>
+                              <h5 class="card-text" th:text="${carList[0].torque}"></h5>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <div class="card text-white bg-dark mb-3" >
+                          <h3 class="card-header" th:text="${carList[1].modelYear}"></h3>
+                          <div class="card-body">
+                              <h4 class="card-title">Driveline: </h4>
+                              <h5 class="card-text" th:text="${carList[1].driveLine}"></h5>
+                              <h4 class="card-title">Horsepower: </h4>
+                              <h5 class="card-text" th:text="${carList[1].hp}"></h5>
+                              <h4 class="card-title">Torque: </h4>
+                              <h5 class="card-text" th:text="${carList[1].torque}"></h5>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <div class="card text-white bg-dark mb-3">
+                          <h3 class="card-header" th:text="${carList[2].modelYear}"></h3>
+                          <div class="card-body">
+                              <h4 class="card-title">Driveline: </h4>
+                              <h5 class="card-text" th:text="${carList[2].driveLine}"></h5>
+                              <h4 class="card-title">Horsepower: </h4>
+                              <h5 class="card-text" th:text="${carList[2].hp}"></h5>
+                              <h4 class="card-title">Torque: </h4>
+                              <h5 class="card-text" th:text="${carList[2].torque}"></h5>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="carousel-item">
+                      <div class="card text-white bg-dark mb-3">
+                          <h3 class="card-header" th:text="${carList[3].modelYear}"></h3>
+                          <div class="card-body">
+                              <h4 class="card-title">Driveline: </h4>
+                              <h5 class="card-text" th:text="${carList[3].driveLine}"></h5>
+                              <h4 class="card-title">Horsepower: </h4>
+                              <h5 class="card-text" th:text="${carList[3].hp}"></h5>
+                              <h4 class="card-title">Torque: </h4>
+                              <h5 class="card-text" th:text="${carList[3].torque}"></h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
   <div class="logout" th:if="${param.logout}" style="color:red;">
     You have been logged out
   </div>
