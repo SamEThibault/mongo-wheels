@@ -120,7 +120,7 @@ public class HomeController {
 		postRepo.save(post);
 		model.addAttribute("post", new Post());
 		model.addAttribute("postList", postRepo.findAll());
-		return "community";
+		return "redirect:/community";
 	}
 	
     @GetMapping("/deletePost/{id}")
@@ -144,7 +144,7 @@ public class HomeController {
         
         model.addAttribute("post", new Post());
         model.addAttribute("postList", postRepo.findAll()); 
-        return "community";
+        return "redirect:/community";
     }
 	
 	
