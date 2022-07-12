@@ -67,6 +67,9 @@ public class HomeController {
 	public String search() {
 		return "search";
 	}
+
+	@GetMapping("/nav")
+	public String nav(){ return "nav";}
 	
 	@GetMapping("/fuel")
 	public String fuel(Model model) {
