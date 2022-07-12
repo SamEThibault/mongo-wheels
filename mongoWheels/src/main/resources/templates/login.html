@@ -12,6 +12,8 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 </head>
 <body>
 
+  <div id="nav-placeholder"></div>
+
   <div class="logout" th:if="${param.logout}" style="color:red;">
     You have been logged out
   </div>
@@ -26,7 +28,14 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
   <form th:action="@{/login}" method="post">
 	Username:  <input type="text" name="username" placeholder="Username" required autofocus> <br>
 	Password:	<input type="password"  name="password" placeholder="Password" required>
-		<input type="submit" value="login"> 
+		<input type="submit" value="login">
   </form>
 </body>
+
+<script>
+  $(function(){
+    $("#nav-placeholder").load("nav");
+  });
+</script>
+
 </html>

@@ -42,5 +42,4 @@ public class SecurityController {
 		userRepo.addRole(user.getUserId(), 1);
 		return "home";
 	}
-	
 }
