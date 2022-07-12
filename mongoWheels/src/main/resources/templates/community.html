@@ -11,53 +11,56 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
     <meta charset="UTF-8">
     <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
 </head>
-<body>
+
+<body class="body">
     <div id="nav-placeholder"></div>
 
-	<table class="table">
-		<thead>
-			<tr>
-				
-				<th>Username</th>
-				<th>Message</th>
-				
-				<th><div sec:authorize="hasRole('ADMIN')">Actions</div></th>
-				
-			</tr>
-		</thead>
-		<tbody> 
-				<tr th:each="post:${postList}">
-				
-					
-					<td th:text="${post.username}">Drink Name</td>
-					<td th:text="${post.message}">Drink Description</td>
-					
-					<td>
-					<div sec:authorize="hasRole('ADMIN')">
-					<a th:href="${'/deletePost/' + {post.id}}">Delete</a>
-					<a th:href="${'/editPost/' + {post.id}}">Edit</a>
-					</div>
-					</td>
-					
-				</tr>
-				
-				
-		
-		</tbody>
+	<div class="row justify-content-center m-5" sec:authorize="isAuthenticated()">
+		<div class="col-auto w-50">
+			<form method="post" action="/addPost" th:object="${post}">
+				<input type="hidden" th:field="*{id}">
+
+				<div class="form-group">
+					<label for="exampleFormControlInput1">Username</label>
+					<input type="text" class="form-control" th:field="*{username}" id="exampleFormControlInput1" placeholder="My Username">
+				</div>
 
 
-	</table>
-  
-  
-    <div sec:authorize="isAuthenticated()">
-	<form class="input" method="post" action="/addPost" th:object="${post}">
-	
-		<input type="hidden" th:field="*{id}"> 
-		<input type="text" th:field="*{username}"> 
-		<input type="text" th:field="*{message}">
-		<button type="submit">Submit</button>
-		
-	</form>
+				<div class="form-group">
+					<label for="exampleFormControlTextarea1">Message</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" th:field="*{message}" rows="3"></textarea>
+				</div>
+				<button type="submit" class="btn btn-dark">Post message</button>
+			</form>
+
+		</div>
+	</div>
+
+
+	<div class="row justify-content-center m-5">
+		<div class="col-auto w-75 board">
+			<table class="table table-dark table-striped table-bordered">
+				<thead class="thead-light thead">
+					<tr>
+						<th>Username</th>
+						<th>Message</th>
+						<th><div sec:authorize="hasRole('ADMIN')">Actions</div></th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr th:each="post:${postList}">
+							<td th:text="${post.username}">Drink Name</td>
+							<td th:text="${post.message}">Drink Description</td>
+							<td>
+							<div sec:authorize="hasRole('ADMIN')">
+							<a th:href="${'/deletePost/' + {post.id}}">Delete</a>
+							<a th:href="${'/editPost/' + {post.id}}">Edit</a>
+							</div>
+							</td>
+						</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </body>
 <script>
