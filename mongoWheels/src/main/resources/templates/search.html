@@ -32,7 +32,7 @@
     <div class="col">
        <form class="form-inline my-2 my-lg-0 " action="http://localhost:8080/getCars" method="GET">
       <input class="form-control mr-sm-2" name="make" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
     </form>
     </div>
     <div class="col">
@@ -40,39 +40,36 @@
   </div>
 </div>
 
-<table class="sortable">
-  <thead>
-  <tr>
-
-    <th>Vehicle</th>
-    <th>Model Year</th>
-    <th>Hybrid</th>
-    <th>DriveLine</th>
-    <th>Torque</th>
-    <th>Horsepower</th>
-    <th>Transmission</th>
-    <th>Gears</th>
-
-
-  </tr>
-  </thead>
-  <tbody>
-  <tr th:each="car:${carList}">
-
-    <td th:text="${car.make}">make</td>
-    <td th:text="${car.modelYear}">engineType</td>
-    <td th:text="${car.hybrid}">hybrid</td>
-    <td th:text="${car.driveLine}">DriveLine</td>
-    <td th:text="${car.torque}">tq</td>
-    <td th:text="${car.hp}">hp</td>
-    <td th:text="${car.transmission}">tranny</td>
-    <td th:text="${car.numGears}">num</td>
-
-  </tr>
-  </tbody>
-
-
-</table>
+  <div class="row justify-content-center m-5">
+    <div class="col-auto">
+      <table class="table table-dark table-striped table-bordered table-sm">
+        <thead class="thead-light thead">
+        <tr>
+          <th>Vehicle</th>
+          <th>Model Year</th>
+          <th>Hybrid</th>
+          <th>DriveLine</th>
+          <th>Torque</th>
+          <th>Horsepower</th>
+          <th>Transmission</th>
+          <th>Gears</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="car:${carList}">
+          <td th:text="${car.make}">make</td>
+          <td th:text="${car.modelYear}">engineType</td>
+          <td th:text="${car.hybrid}">hybrid</td>
+          <td th:text="${car.driveLine}">DriveLine</td>
+          <td th:text="${car.torque}">tq</td>
+          <td th:text="${car.hp}">hp</td>
+          <td th:text="${car.transmission}">tranny</td>
+          <td th:text="${car.numGears}">num</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
 </body>
 <script>
