@@ -1,36 +1,7 @@
 .body {
-    background-color: #15121E;
+    background-color: black;
 }
 
-.a {
-    color: #FF276F;
-}
-
-.nav-link {
-    color: #FF276F;
-}
-
-.tr {
-    color: white;
-}
-
-.th {
-    padding: 20px;
-}
-
-.sortable {
-    text-align:center;
-    position:relative;
-    left: 15vw;
-}
-
-.li {
-    padding-left: 10px;
-}
-
-.input {
-    background-color:#343c44;
-    border: 0px;
-    font-size: 20px;
-    color: #dd2b5d;
+.table-body, .thead {
+    text-align: center !important;
 }

@@ -2,6 +2,9 @@
     background-color: black;
 }
 
+.table-body, .thead {
+    text-align: center !important;
+}
 
 
 

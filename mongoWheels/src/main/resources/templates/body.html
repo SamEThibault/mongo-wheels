@@ -29,7 +29,7 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 						<th>Width</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody class="table-body">
 					<tr th:each="car:${carList}">
 						<td th:text="${car.make}">make</td>
 						<td th:text="${car.modelYear}">modelYear</td>
