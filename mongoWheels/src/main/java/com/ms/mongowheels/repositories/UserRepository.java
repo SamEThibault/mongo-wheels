@@ -23,6 +23,7 @@ public class UserRepository {
 	private NamedParameterJdbcTemplate jdbc;
 	
 	 public User findUserAccount(String userName){
+		 System.out.println("here");
 		MapSqlParameterSource parameters = new MapSqlParameterSource();
 		String query = "SELECT * FROM sec_user WHERE userName=:userName";
 		parameters.addValue("userName", userName);
