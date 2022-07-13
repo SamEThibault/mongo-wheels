@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +51,11 @@
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Code/JAVA/personal/Mongo-example-matt/MongoDB/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="MongoWheelsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mongoWheels" />
@@ -96,6 +99,7 @@
       <workItem from="1657577466922" duration="96000" />
       <workItem from="1657682396537" duration="3823000" />
       <workItem from="1657686567570" duration="22000" />
+      <workItem from="1657687326931" duration="296000" />
     </task>
     <servers />
   </component>
