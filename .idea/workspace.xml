@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/static/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/static/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/login.html" afterDir="false" />
-    </list>
+    <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +31,9 @@
     </option>
   </component>
   <component name="ProjectId" id="284TS1eG1xZhdeeAHWjtYlGli0P" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,6 +50,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Code/JAVA/personal/Mongo-example-matt/MongoDB/pom.xml" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn package" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="MongoWheelsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -94,7 +97,9 @@
       <workItem from="1654633088002" duration="1443000" />
       <workItem from="1655227781750" duration="8000" />
       <workItem from="1657577466922" duration="96000" />
-      <workItem from="1657682396537" duration="2296000" />
+      <workItem from="1657682396537" duration="3823000" />
+      <workItem from="1657686567570" duration="22000" />
+      <workItem from="1657687326931" duration="296000" />
     </task>
     <servers />
   </component>
