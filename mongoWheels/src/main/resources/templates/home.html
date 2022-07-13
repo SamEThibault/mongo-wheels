@@ -13,7 +13,10 @@ xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <body>
     <div id="nav-placeholder"></div>
 	
-  <span class="welcome" th:text="${mymessage}"></span>
+  <h1 class="welcome" th:text="${mymessage}"></h1>
+    <div class="logout" th:if="${param.logout}" style="color:red;">
+      You have been logged out
+    </div>
 </body>
 
 <script>
