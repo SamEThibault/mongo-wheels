@@ -7,8 +7,10 @@ import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +22,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.ms.mongowheels.beans.Car;
 import com.ms.mongowheels.beans.Post;
+import com.ms.mongowheels.beans.User;
 import com.ms.mongowheels.repositories.CarRepository;
 import com.ms.mongowheels.repositories.PostRepository;
+import com.ms.mongowheels.repositories.UserRepository;
 
 
 
@@ -35,6 +39,10 @@ public class HomeController {
 	
 	@Autowired
 	private PostRepository postRepo;
+	
+	@Autowired 
+	@Lazy
+	private UserRepository userRepo;
 	
 	@GetMapping("/")
 	public String home(HttpSession session, Model model, Authentication authentication) {
@@ -121,7 +129,9 @@ public class HomeController {
 	
 	@PostMapping("/addPost")
 	public String addPost(Model model, @ModelAttribute Post post) {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		post.setId(null);
+		post.setUsername(auth.getName());
 		postRepo.save(post);
 		model.addAttribute("post", new Post());
 		model.addAttribute("postList", postRepo.findAll());

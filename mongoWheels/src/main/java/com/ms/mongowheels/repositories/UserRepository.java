@@ -37,8 +37,9 @@ public class UserRepository {
 			return null;
 		}
 		
-	}  
-	
+	} 
+	 
+
 	public ArrayList<String> getRoles()
 	{
 		ArrayList<String> roles = new ArrayList<String>();
