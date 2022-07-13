@@ -35,7 +35,9 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 		}
 	
 		List<String> roles = userRepo.getRolesById(user.getUserId());
-		System.out.println(roles);		
+		System.out.println(roles);	
+		
+		
 		List<GrantedAuthority> grantList = new ArrayList<GrantedAuthority>();
 		if (roles != null) {
 			for(String role : roles ) {
@@ -44,7 +46,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 		}
 		
 		User springUser = new User(user.getUserName(), user.getEncryptedPassword(), grantList);
-		
+
 		UserDetails userDetails = (UserDetails)springUser;
 		return userDetails;
 	}

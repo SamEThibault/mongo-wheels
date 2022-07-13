@@ -21,17 +21,17 @@ public class SecurityController {
 	
 	@GetMapping("/login")
 	public String goLogin() {
-		return "login.html";
+		return "login";
 	}
 	
 	@GetMapping("/access-denied")
 	public String accessDenied() {
-		return "access-denied.html";
+		return "access-denied";
 	}
 	
 	@GetMapping("/registerUser")
 	public String getToRegistration() {
-		return "registration.html";
+		return "registration";
 	}
 	
 	@PostMapping("/registerUser")
@@ -40,7 +40,6 @@ public class SecurityController {
 		userRepo.addUser(username, password);
 		User user = userRepo.findUserAccount(username);
 		userRepo.addRole(user.getUserId(), 1);
-		return "home.html";
+		return "home";
 	}
-	
 }

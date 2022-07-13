@@ -1,0 +1,30 @@
+.body {
+    background-color: #15121E;
+}
+
+.a {
+    color: #FF276F;
+}
+
+.nav-link {
+    color: #FF276F;
+}
+
+.tr {
+    color: white;
+}
+
+.th {
+    padding: 20px;
+}
+
+.li {
+    padding-left: 10px;
+}
+
+.input {
+    background-color:#343c44;
+    border: 0px;
+    font-size: 20px;
+    color: #dd2b5d;
+}

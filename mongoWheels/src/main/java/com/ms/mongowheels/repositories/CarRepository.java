@@ -13,4 +13,7 @@ public interface CarRepository extends MongoRepository<Car, String> {
 
     // returns list of car objects which "make" fields match the make parameter
     List<Car> findCarsByMake(String make);
+
+    // returns list of car objects that equal hp (used in explore carousel)
+    List<Car> findAllByHpEquals(int hp);
 }
