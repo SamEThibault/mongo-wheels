@@ -1,0 +1,7 @@
+spring.h2.console.enabled=
+spring.datasource.url=
+spring.datasource.driverClassName=
+spring.datasource.username=
+spring.datasource.password=
+
+spring.data.mongodb.uri=
