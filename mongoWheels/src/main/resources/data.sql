@@ -12,7 +12,7 @@ values ('ROLE_ADMIN');
  
 
 insert into user_role (userId, roleId)
-values (1, 1);
+values (1, 2);
 
 insert into user_role (userId, roleId)
-values (2, 2);
+values (2, 1);
