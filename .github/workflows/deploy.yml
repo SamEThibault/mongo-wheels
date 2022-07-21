@@ -33,15 +33,15 @@ jobs:
           'systemctl restart mongowheels.service &&
           systemctl status mongowheels.service'
 
-    notify:
-      needs: deploy
-      name: "Notify on Discord"
-      runs-on: ubuntu-latest
-      if: ${{ always() }}
-      steps:
-        - name: Success Notification
-          if: ${{ needs.deploy.result == 'success' }}
-          run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
-        - name: Error Notification
-          if: ${{ needs.deploy.result == 'failure' }}
-          run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=Deployment Error :("
+  notify:
+    needs: deploy
+    name: "Notify on Discord"
+    runs-on: ubuntu-latest
+    if: ${{ always() }}
+    steps:
+      - name: Success Notification
+        if: ${{ needs.deploy.result == 'success' }}
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=🚀 Deployment Successful"
+      - name: Error Notification
+        if: ${{ needs.deploy.result == 'failure' }}
+        run: curl -s -X POST "${{ secrets.DISCORD_WEBHOOK }}" -d "content=Deployment Error :("
