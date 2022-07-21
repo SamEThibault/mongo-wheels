@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dee69e8-7494-408a-a555-5f195c100f9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/java/com/ms/mongowheels/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/engine.html" beforeDir="false" afterPath="$PROJECT_DIR$/mongoWheels/src/main/resources/templates/engine.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +112,7 @@
       <workItem from="1657687326931" duration="1858000" />
       <workItem from="1657689884159" duration="867000" />
       <workItem from="1657767663160" duration="2831000" />
-      <workItem from="1658416205658" duration="664000" />
+      <workItem from="1658416205658" duration="1007000" />
     </task>
     <servers />
   </component>

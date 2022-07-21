@@ -21,6 +21,7 @@ jobs:
             HostName $SSH_IP
             User $SSH_USER
             IdentityFile /home/runner/.ssh/deploy-key.pem
+            port $SSH_PORT
             StrictHostKeyChecking no
           END
         env:
