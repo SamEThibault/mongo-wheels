@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 import java.security.Principal;
 import java.util.ArrayList;
 
+import javax.mail.MessagingException;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -23,9 +24,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.ms.mongowheels.beans.Car;
 import com.ms.mongowheels.beans.Post;
 import com.ms.mongowheels.beans.User;
+import com.ms.mongowheels.emails.EmailServiceImpl;
 import com.ms.mongowheels.repositories.CarRepository;
 import com.ms.mongowheels.repositories.PostRepository;
 import com.ms.mongowheels.repositories.UserRepository;
+
 
 
 
@@ -44,6 +47,9 @@ public class HomeController {
 	@Lazy
 	private UserRepository userRepo;
 	
+	@Autowired
+	private EmailServiceImpl esi;
+	
 	@GetMapping("/")
 	public String home(HttpSession session, Model model, Authentication authentication) {
 		String message;
@@ -54,8 +60,14 @@ public class HomeController {
 		message = "Welcome back!";
 		
 	}
-		model.addAttribute("mymessage", message);
-		
+//		model.addAttribute("mymessage", message);
+//		
+//		try {
+//			esi.sentMailWithThymeleaf("alfjtbs@gmail.com", "Test", "test", "test", "test");
+//			} catch (MessagingException e) {
+//				e.printStackTrace();
+//			}
+//		
 		
 		return "home"; 
 	}
